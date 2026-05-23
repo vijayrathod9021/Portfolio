@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vijay Rathod — Portfolio</title>
+  <link rel="icon" type="image/png" href="favicon-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive-patch.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════ HEADER ══════════════ -->
+  <header id="header">
+    <div class="logo">
+      <div class="logo-icon-wrap"><i class="fa-solid fa-code"></i></div>
+      <span class="grad-text">VIJAY.</span>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="#contact" class="btn-primary">Let's Talk <i class="fa-solid fa-arrow-right"></i></a>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#hero" onclick="closeMobileNav()">Home</a>
+    <a href="#about" onclick="closeMobileNav()">About</a>
+    <a href="#skills" onclick="closeMobileNav()">Skills</a>
+    <a href="#projects" onclick="closeMobileNav()">Projects</a>
+    <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  </div>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-grid">
+      <!-- Left -->
+      <div class="hero-content">
+        <div class="hero-label"><i class="fa-solid fa-star"></i> Welcome to my Portfolio</div>
+        <h1>Hi, I'm<span class="name">VIJAY RATHOD</span></h1>
+        <div class="hero-role">a <span class="typing" id="typingText">Frontend Developer</span></div>
+        <p class="hero-desc">I build beautiful, responsive and user-friendly websites with clean code and modern
+          technologies that create real impact.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary"><i class="fa-solid fa-rocket"></i> Explore Projects</a>
+          <a href="Vijay-Rathod-Resume.pdf" download class="btn-outline">
+
+            <i class="fa-solid fa-download"></i>
+
+            Download Resume
+
+          </a>
+        </div>
+        <div class="hero-socials">
+          <span>Connect</span>
+          <a href="https://github.com/vijayrathod9021" target="_blank" class="social-link"><i
+              class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/vijay-rathod-584b21375/" target="_blank" class="social-link"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="https://x.com/devwithvijay" target="_blank" class="social-link"><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="https://www.instagram.com/vijay_r_05__/" target="_blank" class="social-link"><i
+              class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="hero-visual">
+        <div class="hero-img-wrap">
+          <div class="float-badge badge-available">
+            <div class="dot"></div>
+            Available for Work
+          </div>
+          <img src="Developer-2.png" alt="Vijay Rathod"
+            onerror="this.style.background='linear-gradient(135deg,#1a0a3e,#0a1a3e)';this.style.minHeight='420px';" />
+          <div class="float-badge badge-projects">
+            <div class="dot"></div>
+            7+ Projects Built
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ ABOUT ══════════════ -->
+  <section class="about" id="about">
+    <div class="about-grid">
+
+      <!-- Left -->
+      <div class="about-left reveal reveal-left">
+        <div class="img-card card">
+          <img src="Developer-1.png" alt="Vijay Rathod"
+            onerror="this.style.background='linear-gradient(135deg,#1a0a3e,#0a1a3e)';this.style.minHeight='320px';" />
+        </div>
+        <div class="about-info-card card">
+          <div class="role-line">
+            <div class="role-icon"><i class="fa-solid fa-user"></i></div>
+            <div class="role-text">
+              <h3>Frontend Developer</h3>
+              <p>Building responsive, fast &amp; beautiful websites with clean code.</p>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="location-line">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>India</span>
+            <span style="color:var(--text-dim)">·</span>
+            <span class="available-dot">Available for opportunities</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="about-right reveal reveal-right">
+        <span class="section-label">About me</span>
+        <h2 class="section-title" style="margin:16px 0 24px">I'm <span class="grad-text">Vijay Rathod</span></h2>
+        <div class="about-body">
+          <p>A passionate Full Stack Web Developer who loves turning ideas into interactive and user-friendly web
+            experiences that solve real-world problems.</p>
+          <div class="about-divider"></div>
+          <p>A B.Sc Computer Science (second-year) student at COCSIT College Latur, passionate about Frontend
+            Development, UI/UX Design and modern web technologies.</p>
+          <p>A Computer Science student with a strong focus on Frontend technologies. I enjoy building modern,
+            responsive and accessible web applications that provide great user experience.</p>
+        </div>
+
+        <div class="stats-grid stagger">
+          <div class="stat-card card">
+            <div class="stat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div><span class="stat-num">7+</span><span class="stat-label">Projects Built</span></div>
+          </div>
+          <div class="stat-card card">
+            <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div><span class="stat-num">1+</span><span class="stat-label">Year of Learning</span></div>
+          </div>
+          <div class="stat-card card">
+            <div class="stat-icon"><i class="fa-regular fa-clock"></i></div>
+            <div><span class="stat-num">1000+</span><span class="stat-label">Hours of Coding</span></div>
+          </div>
+          <div class="stat-card card">
+            <div class="stat-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <div><span class="stat-num">100%</span><span class="stat-label">Dedication</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════ SKILLS ══════════════ -->
+  <section class="skills" id="skills">
+    <div class="skills-inner">
+
+      <div class="skills-header reveal">
+        <span class="section-label">My Skills</span>
+        <h2 class="section-title" style="margin-top:16px">Skills &amp; <span class="grad-text">Tech Stack</span></h2>
+        <p>Technologies and tools I use to build modern, fast and beautiful web experiences.</p>
+      </div>
+
+      <!-- Tech banner -->
+      <div class="tech-banner card reveal">
+        <div class="tech-banner-left">
+          <h4><i class="fa-brands fa-dev"></i> &nbsp;Tech Stack</h4>
+          <div class="tech-icons">
+            <i class="fa-brands fa-html5 tech-icon" style="color:#e34f26" title="HTML5"></i>
+            <i class="fa-brands fa-css3-alt tech-icon" style="color:#1572b6" title="CSS3"></i>
+            <i class="fa-brands fa-js tech-icon" style="color:#f7df1e" title="JavaScript"></i>
+            <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS"
+              class="tech-icon-img" title="Tailwind CSS" />
+            <i class="fa-brands fa-git-alt tech-icon" style="color:#f05032" title="Git"></i>
+            <i class="fa-brands fa-github tech-icon" style="color:#fff" title="GitHub"></i>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="tech-icon-img"
+              title="C" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"
+              class="tech-icon-img" title="C++" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL"
+              class="tech-icon-img" title="SQL" />
+          </div>
+          <p style="font-size:12px;color:var(--text-dim);margin-top:10px;">HTML, CSS, JavaScript, Tailwind CSS,
+            Git, GitHub, C, C++, SQL &amp; more</p>
+        </div>
+        <div>
+          <h4
+            style="font-family:var(--font-display);font-size:13px;font-weight:600;color:var(--purple-2);margin-bottom:12px;text-transform:uppercase;letter-spacing:0.08em;">
+            <i class="fa-regular fa-heart"></i> &nbsp;Outside of Code
+          </h4>
+          <div class="interests">
+            <span class="interest-tag"><i class="fa-solid fa-book-open"></i> Reading</span>
+            <span class="interest-tag"><i class="fa-solid fa-headphones"></i> Music</span>
+            <span class="interest-tag"><i class="fa-solid fa-volleyball"></i> Volleyball</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill cards -->
+      <div class="skill-cards stagger">
+
+        <div class="skill-card card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fa-solid fa-code"></i></div>
+            <div>
+              <h3>Frontend Development</h3>
+              <p>Building responsive &amp; interactive UIs</p>
+            </div>
+          </div>
+          <div class="skill-card-divider"></div>
+          <div class="skill-chips">
+            <span class="skill-chip"><i class="fa-brands fa-html5" style="color:#e34f26"></i> HTML5</span>
+            <span class="skill-chip"><i class="fa-brands fa-css3-alt" style="color:#1572b6"></i> CSS3</span>
+            <span class="skill-chip"><i class="fa-brands fa-js" style="color:#f7df1e"></i> JS ES6+</span>
+          </div>
+        </div>
+
+        <div class="skill-card card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <div>
+              <h3>Tools &amp; Tech</h3>
+              <p>Tools that help me ship better</p>
+            </div>
+          </div>
+          <div class="skill-card-divider"></div>
+          <div class="skill-chips">
+            <span class="skill-chip"><i class="fa-brands fa-git-alt" style="color:#f05032"></i> Git</span>
+            <span class="skill-chip"><i class="fa-brands fa-github"></i> GitHub</span>
+
+            <!-- VS Code -->
+            <div class="skill-chip">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="">
+              <span>VS Code</span>
+            </div>
+
+            <!-- Chrome DevTools -->
+            <div class="skill-chip">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg"
+                alt="Chrome DevTools">
+              <span>Chrome DevTools</span>
+            </div>
+
+            <!-- Figma -->
+            <div class="skill-chip">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+              <span>Figma</span>
+            </div>
+
+            <!-- Tailwind CSS -->
+            <div class="skill-chip">
+              <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS">
+              <span>Tailwind CSS</span>
+            </div>
+
+            <!-- Vercel -->
+            <div class="skill-chip">
+              <img src="https://www.svgrepo.com/show/327408/logo-vercel.svg" alt="Vercel">
+              <span>Vercel</span>
+            </div>
+
+            <!-- ChatGPT -->
+            <div class="skill-chip">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="">
+              <span>ChatGPT</span>
+            </div>
+
+            <!-- Claude -->
+            <div class="skill-chip">
+              <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/claude-color.png"
+                alt="">
+              <span>Claude AI</span>
+            </div>
+
+            <!-- GitHub Copilot -->
+            <div class="skill-chip">
+              <img src="https://github.githubassets.com/images/modules/site/copilot/copilot.png" alt="">
+              <span>GitHub Copilot</span>
+            </div>
+
+            <!-- Cursor -->
+            <div class="skill-chip">
+              <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/cursor-color.png"
+                alt="">
+              <span>Cursor AI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <h3>Learning &amp; Exploring</h3>
+              <p>Technologies I'm currently learning</p>
+            </div>
+          </div>
+          <div class="skill-card-divider"></div>
+          <div class="skill-chips">
+            <span class="skill-chip"><i class="fa-brands fa-node-js" style="color:#3c873a"></i> Node.js</span>
+            <span class="skill-chip"><i class="fa-solid fa-database" style="color:#4db33d"></i> MongoDB</span>
+            <span class="skill-chip"><i class="fa-solid fa-t" style="color:#3178c6"></i> TypeScript</span>
+            <!-- React -->
+            <div class="skill-chip">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="">
+              <span>React</span>
+            </div>
+
+            <!-- Next.js -->
+            <div class="skill-chip">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="">
+              <span>Next.js</span>
+            </div>
+
+            <!-- Express.js -->
+            <div class="skill-chip">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="">
+              <span>Express.js</span>
+            </div>
+
+            <!-- Authentication -->
+            <div class="skill-chip">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>Authentication</span>
+            </div>
+
+            <!-- API -->
+            <div class="skill-chip">
+              <i class="fa-solid fa-plug"></i>
+              <span>API Integration</span>
+            </div>
+
+            <!-- AI Integration -->
+            <div class="skill-chip">
+              <i class="fa-solid fa-robot"></i>
+              <span>AI Integration</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- What I'm good at -->
+      <div class="good-at card reveal">
+        <div class="good-at-grid stagger">
+          <div class="good-at-item">
+            <div class="good-icon good-icon-1"><i class="fa-solid fa-bullseye"></i></div>
+            <div>
+              <h4>Always Learning</h4>
+              <button class="btn-outline"
+                style="padding:5px 14px;font-size:11px;margin:4px auto 8px;border-radius:50px;">Growth Mindset</button>
+            </div>
+            <p>Constantly improving and embracing new technologies and challenges.</p>
+          </div>
+          <div class="good-at-item">
+            <div class="good-icon good-icon-2"><i class="fa-regular fa-lightbulb"></i></div>
+            <h4>Problem Solving</h4>
+            <p>Breaking down complex problems and finding elegant, efficient solutions.</p>
+          </div>
+          <div class="good-at-item">
+            <div class="good-icon"
+              style="background:rgba(139,92,246,0.12);color:var(--purple);border:1px solid rgba(139,92,246,0.2)"><i
+                class="fa-solid fa-code"></i></div>
+            <h4>Clean Code</h4>
+            <p>Writing maintainable, scalable and readable code every time.</p>
+          </div>
+          <div class="good-at-item">
+            <div class="good-icon good-icon-3"><i class="fa-solid fa-computer"></i></div>
+            <h4>Responsive Design</h4>
+            <p>Building websites that look great on all devices and screen sizes.</p>
+          </div>
+          <div class="good-at-item">
+            <div class="good-icon good-icon-4"><i class="fa-solid fa-gauge-high"></i></div>
+            <h4>Performance</h4>
+            <p>Optimizing web applications for speed and better user experience.</p>
+          </div>
+          <div class="good-at-item">
+            <div class="good-icon good-icon-5"><i class="fa-solid fa-users"></i></div>
+            <h4>Teamwork</h4>
+            <p>Collaborating and communicating effectively to build better products.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="consistency-pill">
+        <i class="fa-solid fa-star"></i>
+        <span>I believe in consistency, clean work, and continuous improvement.</span>
+
+        <span class="sep"></span>
+        <span>Let's build something amazing together!</span>
+        <i class="fa-solid fa-heart" style="color:var(--pink)"></i>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════ PROJECTS ══════════════ -->
+  <section class="projects" id="projects">
+    <div class="projects-inner">
+
+      <div class="projects-header reveal">
+        <span class="section-label">My Work</span>
+        <h2 class="section-title" style="margin-top:16px"><span class="grad-text-2">Projects</span></h2>
+        <p>A few things I've built with passion and code.</p>
+        <div class="proj-divider"></div>
+      </div>
+
+      <div class="filter-tabs">
+        <button class="filter-tab active">All</button>
+        <button class="filter-tab">Frontend</button>
+        <button class="filter-tab">Full Stack</button>
+      </div>
+
+      <div class="project-grid stagger">
+
+        <!-- Card 1 -->
+        <div class="project-card card">
+          <div class="project-img">
+            <img src="calculator.png" alt="Calculator App"
+              onerror="this.style.background='linear-gradient(135deg,#1a0a3e,#0a1a3e)';this.style.minHeight='140px'" />
+            <span class="project-tag">Frontend</span>
+            <div class="project-overlay">
+              <button class="overlay-btn" title="Live Demo">
+
+                <a href="https://calculator-seven-henna-72.vercel.app/" target="_blank"><i
+                    class="fa-solid fa-arrow-up-right-from-square" target="_blank"></i></button></a>
+              <button class="overlay-btn" title="GitHub">
+                <a href="https://github.com/vijayrathod9021/calculator" target="_blank"><i
+                    class="fa-brands fa-github" target="_blank"></i></a>
+              </button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Calculator App</h3>
+            <div class="project-chips">
+              <span class="project-chip">HTML</span>
+              <span class="project-chip">CSS</span>
+              <span class="project-chip">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="project-card card">
+          <div class="project-img">
+            <img src="weather.png" alt="Weather App"
+              onerror="this.style.background='linear-gradient(135deg,#0a1a3e,#0a2a4e)';this.style.minHeight='140px'" />
+            <span class="project-tag">Frontend</span>
+            <div class="project-overlay">
+              <button class="overlay-btn">
+                <a href="https://weather-gold-gamma.vercel.app/" target="_blank"><i
+                    class="fa-solid fa-arrow-up-right-from-square" target="_blank"></i></a>
+              </button>
+              <button class="overlay-btn">
+                <a href="https://github.com/vijayrathod9021/Weather" target="_blank"><i
+                    class="fa-brands fa-github" target="_blank"></i></a>
+              </button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Weather App</h3>
+            <div class="project-chips">
+              <span class="project-chip">HTML</span>
+              <span class="project-chip">CSS</span>
+              <span class="project-chip">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="project-card card">
+          <div class="project-img">
+            <img src="Expense tracker.png" alt="Expense Tracker"
+              onerror="this.style.background='linear-gradient(135deg,#0a2a1e,#0a1a2e)';this.style.minHeight='140px'" />
+            <span class="project-tag">Frontend</span>
+            <div class="project-overlay">
+              <button class="overlay-btn">
+                <a href="https://expense-tracker-omega-self.vercel.app/" target="_blank"><i
+                    class="fa-solid fa-arrow-up-right-from-square" target="_blank"></i></a>
+              </button>
+              <button class="overlay-btn">
+                <a href="https://github.com/vijayrathod9021/Expense-Tracker" target="_blank"><i
+                    class="fa-brands fa-github" target="_blank"></i></a>
+              </button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Expense Tracker</h3>
+            <div class="project-chips">
+              <span class="project-chip">HTML</span>
+              <span class="project-chip">CSS</span>
+              <span class="project-chip">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="project-card card">
+          <div class="project-img">
+            <img src="Todo list app.png" alt="To-Do List App"
+              onerror="this.style.background='linear-gradient(135deg,#2a0a3e,#1a0a2e)';this.style.minHeight='140px'" />
+            <span class="project-tag">Frontend</span>
+            <div class="project-overlay">
+              <button class="overlay-btn">
+                <a href="https://to-do-list-app-phi-sand.vercel.app/" target="_blank"><i
+                    class="fa-solid fa-arrow-up-right-from-square" target="_blank"></i></a>
+              </button>
+              <button class="overlay-btn">
+                <a href="https://github.com/vijayrathod9021/TO-DO-List-App" target="_blank"><i
+                    class="fa-brands fa-github" target="_blank"></i></a>
+              </button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>To-Do List App</h3>
+            <div class="project-chips">
+              <span class="project-chip">HTML</span>
+              <span class="project-chip">CSS</span>
+              <span class="project-chip">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+
+      <div class="contact-header reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title" style="margin-top:16px">Let's Work <span class="grad-text-2">Together</span></h2>
+        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Left -->
+        <div class="contact-left reveal reveal-left">
+          <h2>I'm currently available for <span>freelance</span> work. <i class="fa-solid fa-hand-sparkles"
+              style="color:var(--purple)"></i></h2>
+          <p>Whether you have a project in mind or just want to say hello, feel free to reach out. I'll get back to you
+            as soon as possible!</p>
+
+          <div class="contact-cards stagger">
+            <div class="contact-card card">
+              <div class="contact-card-left">
+                <div class="contact-card-icon"><i class="fa-regular fa-envelope"></i></div>
+                <div>
+                  <h4>Email</h4>
+                  <p>vijayra9021@gmail.com</p>
+                </div>
+              </div>
+              <a href="mailto:vijayra9021@gmail.com">
+                <i class="fa-solid fa-arrow-up-right-from-square copyMail"></i>
+              </a>
+            </div>
+            <div class="contact-card card">
+              <div class="contact-card-left">
+                <div class="contact-card-icon"><i class="fa-solid fa-phone "></i></div>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+91 9021077103</p>
+                </div>
+              </div>
+              <a href="tel:+919021077103">
+                <i class="fa-solid fa-arrow-up-right-from-square copyNumber"></i>
+              </a>
+            </div>
+            <div class="contact-card card">
+              <div class="contact-card-left">
+                <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <h4>Location</h4>
+                  <p>India</p>
+                </div>
+              </div>
+              <a href="https://maps.google.com/?q=Latur,Maharashtra" target="_blank">
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <span>Connect with me</span>
+            <a href="https://github.com/vijayrathod9021" target="_blank" class="social-link"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vijay-rathod-584b21375/" target="_blank" class="social-link"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a href="https://x.com/devwithvijay" target="_blank" class="social-link"><i class="fa-brands fa-square-x-twitter" target="_blank"></i></a>
+            <a href="https://www.instagram.com/vijay_r_05__/" target="_blank" class="social-link"><i
+                class="fa-brands fa-instagram" target="_blank"></i></a>
+          </div>
+        </div>
+
+        <!-- Right form -->
+        <form id="contact-form">
+          <div class="contact-form form card reveal reveal-right">
+            <div class="form-top">
+              <div class="form-icon"><i class="fa-regular fa-paper-plane"></i></div>
+              <div>
+                <h4>Send me a message</h4>
+                <p>Fill out the form and I'll get back to you soon.</p>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" name="from_name" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <label>Your Email</label>
+                <input type="email" name="from_email" placeholder="Your Email" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" name="from_Subject" placeholder="Subject" required />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <div class="form-submit">
+              <button class="btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer>
+    <p>© 2026 <span>Vijay Rathod.</span> All rights reserved.</p>
+    <i class="fa-solid fa-heart footer-heart"></i>
+    <p>Designed &amp; Developed by <span>Vijay Rathod.</span></p>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <div class="success-popup">
+    <div class="popup-icon">
+      <i class="fa-solid fa-check"></i>
+    </div>
+    <!-- Copy to clipboard -->
+    <div class="popup-text">
+      <h4>Message Sent!</h4>
+      <p>Thanks for contacting me.</p>
+    </div>
+
+  </div>
+  <!-- Copy to clipboard -->
+  <div class="copied" id="copiedPopup">
+    <i class="fa-solid fa-check"></i>
+    <span>Copied to clipboard</span>
+  </div>
+
+  <!-- Background orbs -->
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <!-- cursor effect -->
+  <div class="c-cursor"></div>
+  <div class="c-cursor-trail"></div>
+
+  <!-- ══════════════ JAVASCRIPT ══════════════ -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
