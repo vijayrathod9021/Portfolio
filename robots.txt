@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-topaz-two-38.vercel.app/sitemap.xml
