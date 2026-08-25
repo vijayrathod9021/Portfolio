@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════
        CSS CUSTOM PROPERTIES
     ═══════════════════════════════════════════════ */
-/* :root {
+:root {
   --bg: #05050f;
   --bg-2: #09091a;
   --bg-card: rgba(255, 255, 255, 0.03);
@@ -21,27 +21,6 @@
   --radius: 16px;
   --radius-sm: 10px;
   --ease: cubic-bezier(0.23, 1, 0.32, 1);
-} */
-
-:root {
-  --bg: #0a0a0c;
-  --bg-2: #101013;
-  --bg-card: rgba(255, 255, 255, 0.025);
-  --border: rgba(255, 255, 255, 0.08);
-  --border-glow: rgba(99, 102, 241, 0.35);
-
-  --accent: #6366f1;
-  --accent-soft: #818cf8;
-
-  --text: #eaeaef;
-  --text-muted: #8d8d99;
-  --text-dim: #58585f;
-
-  --font-display: 'Syne', sans-serif;
-  --font-body: 'DM Sans', sans-serif;
-  --radius: 14px;
-  --radius-sm: 9px;
-  --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .overlay-btn a {
@@ -271,8 +250,8 @@ body::before {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  /* color: var(--purple-2); */
-  color: var(--accent-soft);
+  color: var(--purple-2);
+  /* color: var(--accent-soft); */
   font-family: var(--font-display);
   backdrop-filter: blur(10px);
 }
@@ -282,8 +261,8 @@ body::before {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--accent);
-  /* background: var(--purple); */
+  /* background: var(--accent); */
+  background: var(--purple);
   box-shadow: 0 0 8px var(--purple);
   animation: pulse 2s ease-in-out infinite;
 }
@@ -818,8 +797,8 @@ nav ul li a.active::after {
 }
 
 .badge-projects .dot {
-  background: var(--accent-soft);
-  /* background: var(--blue); */
+  /* background: var(--accent-soft); */
+  background: var(--blue);
   box-shadow: 0 0 8px var(--blue);
 }
 
@@ -2727,14 +2706,8 @@ span {
   overflow-wrap: break-word;
 }
 
-
-/* ───────────────────────────────────────────
-   2. ≤ 1200px  — Wide Desktop cap
-   Stops content sprawling on 1440 / 4K screens
-─────────────────────────────────────────── */
 @media (max-width: 1200px) {
 
-  /* Ensure padded sections don't over-stretch */
   .hero,
   .about,
   .skills,
