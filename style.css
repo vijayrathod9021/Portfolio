@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════
        CSS CUSTOM PROPERTIES
     ═══════════════════════════════════════════════ */
-:root {
+/* :root {
   --bg: #05050f;
   --bg-2: #09091a;
   --bg-card: rgba(255, 255, 255, 0.03);
@@ -21,6 +21,27 @@
   --radius: 16px;
   --radius-sm: 10px;
   --ease: cubic-bezier(0.23, 1, 0.32, 1);
+} */
+
+:root {
+  --bg: #0a0a0c;
+  --bg-2: #101013;
+  --bg-card: rgba(255, 255, 255, 0.025);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-glow: rgba(99, 102, 241, 0.35);
+
+  --accent: #6366f1;
+  --accent-soft: #818cf8;
+
+  --text: #eaeaef;
+  --text-muted: #8d8d99;
+  --text-dim: #58585f;
+
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --radius: 14px;
+  --radius-sm: 9px;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .overlay-btn a {
@@ -250,7 +271,8 @@ body::before {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--purple-2);
+  /* color: var(--purple-2); */
+  color: var(--accent-soft);
   font-family: var(--font-display);
   backdrop-filter: blur(10px);
 }
@@ -260,7 +282,8 @@ body::before {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--purple);
+  background: var(--accent);
+  /* background: var(--purple); */
   box-shadow: 0 0 8px var(--purple);
   animation: pulse 2s ease-in-out infinite;
 }
@@ -442,23 +465,25 @@ nav ul li a {
   font-weight: 500;
   color: var(--text-muted);
   position: relative;
-  transition: color 0.3s;
+  display: inline-block;
+  padding: 8px 0;
+  transition: color 0.25s ease;
 }
 
 nav ul li a::after {
   content: '';
   position: absolute;
-  bottom: -4px;
   left: 0;
+  bottom: 2px;
   width: 0;
   height: 2px;
   background: var(--grad);
-  border-radius: 2px;
+  border-radius: 999px;
   transition: width 0.3s var(--ease);
 }
 
 nav ul li a:hover {
-  color: var(--text);
+  color: #ffffff;
 }
 
 nav ul li a:hover::after {
@@ -466,7 +491,7 @@ nav ul li a:hover::after {
 }
 
 nav ul li a.active {
-  color: var(--text);
+  color: #ffffff;
 }
 
 nav ul li a.active::after {
@@ -793,7 +818,8 @@ nav ul li a.active::after {
 }
 
 .badge-projects .dot {
-  background: var(--blue);
+  background: var(--accent-soft);
+  /* background: var(--blue); */
   box-shadow: 0 0 8px var(--blue);
 }
 
@@ -1297,7 +1323,7 @@ a .btn-outline {
 
 .good-icon-3 {
   background: rgba(236, 72, 153, 0.12);
-  color: var(--pink);
+  color: var(--accent);
   border: 1px solid rgba(236, 72, 153, 0.2);
 }
 
@@ -1614,7 +1640,7 @@ a .btn-outline {
 }
 
 .contact-left h2 span {
-  background: var(--grad-2);
+  background: var(--accent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1830,7 +1856,7 @@ footer p {
 }
 
 footer p span {
-  background: var(--grad);
+  background: var(--accent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -2630,8 +2656,8 @@ footer p span {
   height: 52px;
   border-color: rgba(255, 255, 255, 0.75);
   background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
 }
 
 /* ── Click ripple ── */
