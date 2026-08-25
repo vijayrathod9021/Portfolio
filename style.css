@@ -48,7 +48,6 @@ html {
 }
 
 body {
-  /* cursor: none; */
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
