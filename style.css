@@ -489,29 +489,29 @@ nav ul li a.active::after {
 }
 
 .mobile-nav {
-    position: fixed;
-    top: 68px;
-    left: 0;
-    right: 0;
+  position: fixed;
+  top: 68px;
+  left: 0;
+  right: 0;
 
-    background: var(--bg);
-    border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
 
-    padding: 20px clamp(20px, 5vw, 60px);
+  padding: 20px clamp(20px, 5vw, 60px);
 
-    display: none;
-    flex-direction: column;
-    gap: 18px;
+  display: none;
+  flex-direction: column;
+  gap: 18px;
 
-    z-index: 999;
+  z-index: 999;
 
-    transform: translateY(-8px);
-    opacity: 0;
+  transform: translateY(-8px);
+  opacity: 0;
 
-    transition:
-        transform 0.25s var(--ease),
-        opacity 0.25s ease,
-        background-color 0.3s ease;
+  transition:
+    transform 0.25s var(--ease),
+    opacity 0.25s ease,
+    background-color 0.3s ease;
 }
 
 .mobile-nav.open {
@@ -1560,9 +1560,15 @@ footer p span {
     display: flex;
   }
 
-  .hero-grid {
+  /* .hero-grid {
     grid-template-columns: 1fr;
     gap: 44px;
+    text-align: center;
+  } */
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
     text-align: center;
   }
 
@@ -1577,8 +1583,13 @@ footer p span {
     justify-content: center;
   }
 
-  .hero-visual {
+  /* .hero-visual {
     max-width: 380px;
+    margin: 0 auto;
+  } */
+
+  .hero-visual {
+    max-width: 340px;
     margin: 0 auto;
   }
 
@@ -1629,12 +1640,13 @@ footer p span {
   .skills,
   .projects,
   .contact {
-    padding-top: 72px;
-    padding-bottom: 72px;
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
 
   .hero {
-    padding-top: 100px;
+    min-height: auto;
+    padding-top: 88px;
   }
 
   .hero-visual {
@@ -1687,7 +1699,9 @@ footer p span {
   }
 
   .hero {
-    padding-top: 92px;
+    /* padding-top: 92px; */
+    padding-top: 82px;
+    padding-bottom: 56px;
   }
 
   .hero-btns {
@@ -1699,6 +1713,11 @@ footer p span {
   .btn-outline {
     width: 100%;
     justify-content: center;
+  }
+
+  .about {
+    padding-top: 52px;
+    padding-bottom: 52px;
   }
 
   .stats-grid {
