@@ -464,7 +464,7 @@ nav ul li a.active::after {
   width: 100%;
 }
 
-.hero-label {
+ .hero-label {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -478,7 +478,8 @@ nav ul li a.active::after {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 24px;
-}
+} 
+
 
 .hero-label i {
   font-size: 11px;
@@ -541,7 +542,8 @@ nav ul li a.active::after {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
-  margin-bottom: 44px;
+  margin-bottom: 40px;
+  /* margin-bottom: 32px; */
 }
 
 .hero-socials {
@@ -588,7 +590,7 @@ nav ul li a.active::after {
 .hero-img-wrap {
   position: relative;
   width: 100%;
-  max-width: 380px;
+  max-width: 420px;
 }
 
 .hero-img-wrap img {
