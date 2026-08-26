@@ -22,6 +22,32 @@ function typeLoop() {
   setTimeout(typeLoop, deleting ? 50 : 90);
 }
 typeLoop();
+const themeToggle = document.getElementById("themeToggle");
+const themeIcon = document.querySelector(".theme-icon");
+
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "light") {
+  document.documentElement.setAttribute("data-theme", "light");
+  themeIcon.textContent = "☾";
+}
+
+themeToggle.addEventListener("click", () => {
+  const isLight =
+    document.documentElement.getAttribute("data-theme") === "light";
+
+  if (isLight) {
+    document.documentElement.removeAttribute("data-theme");
+    localStorage.setItem("theme", "dark");
+    themeIcon.textContent = "☼";
+    themeToggle.setAttribute("aria-label", "Switch to light mode");
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light");
+    themeIcon.textContent = "☾";
+    themeToggle.setAttribute("aria-label", "Switch to dark mode");
+  }
+});
 
 /* ── Header scroll ── */
 const header = document.getElementById('header');
