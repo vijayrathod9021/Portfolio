@@ -33,6 +33,7 @@
 
   --purple: #8b5cf6;
   --purple-2: #a78bfa;
+  --pink: #ec4899;
 
   --text: #f4f4f5;
   --text-muted: #a1a1aa;
@@ -1759,6 +1760,7 @@ footer p span {
 
 .footer-heart {
   color: var(--pink);
+  /* color: #e879f9; */
 }
 
 /* ═══════════════════════════════════════════════
