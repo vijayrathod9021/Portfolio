@@ -1529,9 +1529,13 @@ footer p span {
 /* ═══════════════════════════════════════════════
    14. RESPONSIVE
 ═══════════════════════════════════════════════ */
+/* ═══════════════════════════════════════════════
+   14. RESPONSIVE
+═══════════════════════════════════════════════ */
 
-/* ── ≤1200px — constrain side padding, tighten grids ── */
+/* ── ≤1200px — tighten desktop layout ── */
 @media (max-width: 1200px) {
+
   .project-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1546,8 +1550,10 @@ footer p span {
   }
 }
 
-/* ── ≤992px — nav collapses, hero/about stack ── */
+
+/* ── ≤992px — tablet layout ── */
 @media (max-width: 992px) {
+
   nav {
     display: none;
   }
@@ -1560,15 +1566,16 @@ footer p span {
     display: flex;
   }
 
-  /* .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 44px;
-    text-align: center;
-  } */
+  /* HERO */
+  .hero {
+    min-height: auto;
+    padding-top: 96px;
+    padding-bottom: 64px;
+  }
 
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 28px;
     text-align: center;
   }
 
@@ -1583,19 +1590,21 @@ footer p span {
     justify-content: center;
   }
 
-  /* .hero-visual {
-    max-width: 380px;
-    margin: 0 auto;
-  } */
-
   .hero-visual {
-    max-width: 340px;
+    max-width: 320px;
     margin: 0 auto;
+  }
+
+
+  /* ABOUT */
+  .about {
+    padding-top: 72px;
+    padding-bottom: 72px;
   }
 
   .about-grid {
     grid-template-columns: 1fr;
-    gap: 36px;
+    gap: 28px;
   }
 
   .about-left {
@@ -1618,6 +1627,8 @@ footer p span {
     min-width: 200px;
   }
 
+
+  /* OTHER SECTIONS */
   .skill-cards {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1632,38 +1643,86 @@ footer p span {
   }
 }
 
-/* ── ≤768px — hero image hidden per design (kept intentionally out on mobile) ── */
+
+/* ── ≤768px — mobile ── */
 @media (max-width: 768px) {
 
+  /* GLOBAL SECTION SPACING */
   .hero,
   .about,
   .skills,
   .projects,
   .contact {
-    padding-top: 56px;
-    padding-bottom: 56px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
+  /* HERO */
   .hero {
     min-height: auto;
     padding-top: 88px;
+    padding-bottom: 56px;
+  }
+
+  .hero-grid {
+    gap: 0;
   }
 
   .hero-visual {
     display: none;
   }
 
+  .hero-desc {
+    max-width: 500px;
+  }
+
+  .hero-btns {
+    margin-bottom: 28px;
+  }
+
+
+  /* ABOUT */
+  .about {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .about-grid {
+    gap: 0;
+  }
+
   .about-left {
     display: none;
+  }
+
+
+  /* SKILLS */
+  .skills {
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
 
   .skill-cards {
     grid-template-columns: 1fr;
   }
 
+
+  /* PROJECTS */
+  .projects {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+  }
+
+
+  /* CONTACT */
+  .contact {
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
 
   .contact-form {
@@ -1674,19 +1733,25 @@ footer p span {
     grid-template-columns: 1fr;
   }
 
+
+  /* FOOTER */
   footer {
     flex-direction: column;
     text-align: center;
   }
 }
 
-/* ── ≤576px — single column, full-width controls ── */
+
+/* ── ≤576px — small phones ── */
 @media (max-width: 576px) {
+
   header {
     height: 64px;
     padding: 0 18px;
   }
 
+
+  /* SECTIONS */
   .hero,
   .about,
   .skills,
@@ -1694,19 +1759,20 @@ footer p span {
   .contact {
     padding-left: 18px;
     padding-right: 18px;
-    padding-top: 56px;
-    padding-bottom: 56px;
   }
 
+
+  /* HERO */
   .hero {
-    /* padding-top: 92px; */
     padding-top: 82px;
-    padding-bottom: 56px;
+    padding-bottom: 52px;
   }
 
   .hero-btns {
     flex-direction: column;
     width: 100%;
+    gap: 10px;
+    margin-bottom: 28px;
   }
 
   .btn-primary,
@@ -1715,19 +1781,37 @@ footer p span {
     justify-content: center;
   }
 
+
+  /* ABOUT */
   .about {
     padding-top: 52px;
     padding-bottom: 52px;
   }
 
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+
+  /* SKILLS */
+  .skills {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+
+  /* PROJECTS */
+  .projects {
+    padding-top: 52px;
+    padding-bottom: 52px;
   }
 
   .project-grid {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+
+
+  /* CONTACT */
+  .contact {
+    padding-top: 52px;
+    padding-bottom: 52px;
   }
 
   .contact-form {
@@ -1738,6 +1822,8 @@ footer p span {
     width: 100%;
   }
 
+
+  /* POPUPS */
   .success-popup,
   .copied {
     top: 16px;
@@ -1746,14 +1832,22 @@ footer p span {
     width: auto;
   }
 
+
+  /* MOBILE NAV */
   .mobile-nav {
     padding: 18px;
     gap: 16px;
   }
 }
 
+
 /* ── ≤380px — very small phones ── */
 @media (max-width: 380px) {
+
+  .hero {
+    padding-top: 78px;
+  }
+
   .hero h1 {
     font-size: 30px;
   }
